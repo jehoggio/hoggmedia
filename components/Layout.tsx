@@ -16,21 +16,17 @@ const Layout = ({ children, title = 'Hogg Media' }: Props) => (
       <meta property="og:title" content={title} />
       <meta
         property="og:description"
-        content="Learn how to code at CodeTech TV with coding videos and tutorials. Check out the best tech gear to get started recording YouTube videos."
+        content="Coding, Tech and Video production blog."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://codetechtv.com/" />
+      <meta property="og:url" content="https://hoggmedia.com/" />
       <meta
         property="og:image"
-        content="https://codetechtv.com/images/codetechtv.png"
+        content="https://hoggmedia.com/images/hogglogo.png"
       />
-      <script
-        data-ad-client="ca-pub-6338076895094129"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
     </Head>
     <Navbar />
+    {children}
   </div>
 );
 
