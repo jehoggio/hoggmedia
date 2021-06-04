@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "clsx": "latest",
     "next": "latest",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-player": "^2.9.0"
   },
   "devDependencies": {
     "@headlessui/react": "^1.2.0",
