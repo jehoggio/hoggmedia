@@ -38,19 +38,17 @@ const GearList = () => {
       {items.map(items => (
         <li key={items.source} className="relative">
           <a href={items.url} target="_blank" rel="noopener noreferrer">
-            <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
-              <img
-                src={items.source}
-                alt=""
-                className="object-cover pointer-events-none group-hover:opacity-75"
-              />
-              <button
-                type="button"
-                className="absolute inset-0 focus:outline-none"
-              >
-                <span className="sr-only">View details for {items.title}</span>
-              </button>
-            </div>
+            <img
+              src={items.source}
+              alt={items.title}
+              className="pointer-events-none group-hover:opacity-75"
+            />
+            <button
+              type="button"
+              className="absolute inset-0 focus:outline-none"
+            >
+              <span className="sr-only">View details for {items.title}</span>
+            </button>
           </a>
           <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">
             {items.title}

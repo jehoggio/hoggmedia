@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import VideosList from '../components/VideosList';
-import VideoPlayer from '../components/VideoPlayer';
-import { YOUTUBE_ALL_VIDEOS_API } from '../constants/videoConstants';
+import VideosList from '../../components/VideosList';
+import VideoPlayer from '../../components/VideoPlayer';
+import { YOUTUBE_ALL_VIDEOS_API } from '../../constants/videoConstants';
 
 export async function getServerSideProps() {
   const res = await fetch(

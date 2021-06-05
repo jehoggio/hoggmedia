@@ -16,7 +16,7 @@ const VideosList = ({ data }: any) => {
             <div key={id} className="mt-2">
               <Link
                 href={{
-                  pathname: '/player/[id]',
+                  pathname: '/videos/[id]',
                   query: { id: `${resourceId.videoId}` },
                 }}
               >
