@@ -3,10 +3,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
-  { name: 'Blog', href: '/blog', current: true },
+  { name: 'Blog', href: '/blog', current: false },
   { name: 'Videos', href: '/videos', current: false },
   { name: 'Projects', href: '/projects', current: false },
-  { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ];
 
@@ -34,16 +33,18 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="images/hogglogo.png"
-                    alt="logo"
-                  />
-                  <img
-                    className="hidden lg:block h-8"
-                    src="images/hogglogo.png"
-                    alt="logo"
-                  />
+                  <a href="/">
+                    <img
+                      className="block lg:hidden h-8 w-auto"
+                      src="images/hogglogo.png"
+                      alt="logo"
+                    />
+                    <img
+                      className="hidden lg:block h-8"
+                      src="images/hogglogo.png"
+                      alt="logo"
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">

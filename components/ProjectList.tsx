@@ -62,7 +62,7 @@ export default function ProjectList() {
             Projects
           </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl sm:mt-4">
-            Check out some of the applications and websites I have built below.
+            Check out some of the applications and websites I have built.
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">

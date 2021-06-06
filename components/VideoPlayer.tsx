@@ -9,7 +9,7 @@ export default function VideoPlayer() {
   const vidUrl = `https://www.youtube.com/watch?v=${id ? id : defaultVid}`;
   return (
     <>
-      <div className="flex justify-center mx-auto lg:hidden">
+      <div className="flex mt-4 mb-2 justify-center mx-auto md:hidden">
         <ReactPlayer
           width="320px"
           height="180px"
@@ -17,13 +17,16 @@ export default function VideoPlayer() {
           url={vidUrl}
         />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:flex justify-center mx-auto mt-10 mb-8">
         <ReactPlayer
           width="960px"
           height="540px"
           controls={true}
           url={vidUrl}
         />
+      </div>
+      <div className="hidden md:flex lg:hidden justify-center mx-auto mt-10 mb-8">
+        <ReactPlayer controls={true} url={vidUrl} />
       </div>
     </>
   );

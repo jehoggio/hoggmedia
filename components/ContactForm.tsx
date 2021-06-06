@@ -5,21 +5,21 @@ export default function ContactForm() {
         <div className="absolute inset-y-0 left-0 w-1/2" />
       </div>
       <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
-        <div className=" py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div className=" py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
               Get in touch
             </h2>
-            <p className="mt-3 text-lg leading-6 text-gray-500">
+            <p className="mt-3 text-lg leading-6">
               Feel free to reach out or leave a message
             </p>
-            <dl className="mt-8 text-base text-gray-500">
+            <dl className="mt-8 text-base">
               <div>
-                <dt className="sr-only">Postal address</dt>
-                <dd>
-                  <p>San Francisco, CA</p>
-                  <p>Napa, CA</p>
-                </dd>
+                <img
+                  className="h-48 rounded-lg shadow-lg"
+                  src="images/me.jpg"
+                  alt="me"
+                />
               </div>
               <div className="mt-6">
                 <dt className="sr-only">LinkedIn</dt>
@@ -69,7 +69,7 @@ export default function ContactForm() {
             </dl>
           </div>
         </div>
-        <div className="py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+        <div className="px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
               <div>

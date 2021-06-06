@@ -11,7 +11,7 @@ export default function Blog() {
         <p className="mt-1 text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl">
           Blog
         </p>
-        <p className="max-w-xl mt-5 mx-auto text-xl ">Under Construction</p>
+        <p className="max-w-xl mt-5 mx-auto text-xl ">Coming soon</p>
       </div>
     </div>
   );
