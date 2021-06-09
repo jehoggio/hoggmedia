@@ -98,7 +98,9 @@ export default function Navbar() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="#"
+                                href="https://www.youtube.com/channel/UCSTOp5FPjNXBmop3o47yZaQ"
+                                target="_blank"
+                                rel="noreferrer"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'block px-4 py-2 text-sm text-gray-700'
@@ -111,7 +113,9 @@ export default function Navbar() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="#"
+                                href="https://twitter.com/Hogg_Media"
+                                target="_blank"
+                                rel="noreferrer"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'block px-4 py-2 text-sm text-gray-700'
@@ -124,7 +128,9 @@ export default function Navbar() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="#"
+                                href="https://www.linkedin.com/in/jeffhogg/"
+                                target="_blank"
+                                rel="noreferrer"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'block px-4 py-2 text-sm text-gray-700'

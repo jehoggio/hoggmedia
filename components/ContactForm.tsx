@@ -24,7 +24,12 @@ export default function ContactForm() {
               <div className="mt-6">
                 <dt className="sr-only">LinkedIn</dt>
                 <dd className="flex">
-                  <a href="" className="text-gray-400 hover:text-gray-500">
+                  <a
+                    href="https://www.linkedin.com/in/jeffhogg/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-400 hover:text-gray-500"
+                  >
                     <span className="sr-only">LinkedIn</span>
                     <svg
                       className="w-6 h-6"
@@ -39,7 +44,14 @@ export default function ContactForm() {
                       />
                     </svg>
                   </a>
-                  <span className="ml-3">Jeff Hogg</span>
+                  <a
+                    href="https://www.linkedin.com/in/jeffhogg/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="ml-3"
+                  >
+                    Jeff Hogg
+                  </a>
                 </dd>
               </div>
               <div className="mt-3">
@@ -47,6 +59,8 @@ export default function ContactForm() {
                 <dd className="flex">
                   <a
                     href="https://twitter.com/Hogg_Media"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-gray-400 hover:text-gray-500"
                   >
                     <span className="sr-only">Twitter</span>
@@ -63,7 +77,14 @@ export default function ContactForm() {
                       />
                     </svg>
                   </a>
-                  <a className="ml-3">@Hogg_Media</a>
+                  <a
+                    href="https://twitter.com/Hogg_Media"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="ml-3"
+                  >
+                    @Hogg_Media
+                  </a>
                 </dd>
               </div>
             </dl>
