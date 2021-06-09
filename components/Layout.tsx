@@ -16,13 +16,13 @@ const Layout = ({ children, title = 'Hogg Media' }: Props) => (
       <meta property="og:title" content={title} />
       <meta
         property="og:description"
-        content="Coding, Tech and Video production blog."
+        content="Coding, Tech and Video production."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://hoggmedia.com/" />
       <meta
         property="og:image"
-        content="https://hoggmedia.com/images/hogglogo.png"
+        content="https://www.hoggmedia.com/images/hogglogo.png"
       />
     </Head>
     <Navbar />
