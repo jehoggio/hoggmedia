@@ -6,12 +6,7 @@ const Hero = () => {
       <div className=" max-w-3xl pb-20 text-center">
         <div className="px-4">
           <div className="relative w-full">
-            <Image
-              src="/images/hoggbanner.png"
-              alt="banner"
-              width="1202px"
-              height="166px"
-            />
+            <img src="/images/hoggbanner2.png" alt="banner" />
           </div>
 
           <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:max-w-3xl">
