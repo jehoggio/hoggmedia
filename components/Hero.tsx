@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       <div className=" max-w-3xl pb-20 text-center">
         <div className="px-4">
           <div className="relative w-full">
-            <img src="images/hoggbanner.png" alt="banner" />
+            <img src="/images/hoggbanner.png" alt="banner" />
           </div>
 
           <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:max-w-3xl">
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative w-full lg:w-1/2">
-        <img src="images/hogglogo.png" alt="logo" />
+        <img src="/images/hogglogo.png" alt="logo" />
       </div>
     </div>
   );
