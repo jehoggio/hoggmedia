@@ -6,17 +6,22 @@ const Hero = () => {
       <div className=" max-w-3xl pb-20 text-center">
         <div className="px-4">
           <div className="relative w-full">
-            <img src="/images/hoggbanner.png" alt="banner" />
+            <Image
+              src="/images/hoggbanner.png"
+              alt="banner"
+              width="1202px"
+              height="166px"
+            />
           </div>
 
           <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:max-w-3xl">
             Coding, Tech and Video Production
           </p>
-          <div className="mt-8 sm:flex sm:justify-center">
-            <div className="flex rounded-md shadow">
+          <div className="mt-8 sm:flex sm:justify-center sm:flex-shrink">
+            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
-                href="/videos"
-                className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                href="/blog"
+                className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
               >
                 Videos
               </a>
