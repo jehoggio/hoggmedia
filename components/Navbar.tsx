@@ -3,8 +3,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
-  { name: 'Blog', href: '/blog', current: false },
   { name: 'Videos', href: '/videos', current: false },
+  { name: 'Blog', href: '/blog', current: false },
   { name: 'Projects', href: '/projects', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ];
