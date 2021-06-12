@@ -24,6 +24,18 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+
+          <meta property="og:title" content="Hogg Media" />
+          <meta
+            property="og:description"
+            content="Coding, Tech and Video production."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://hoggmedia.com/" />
+          <meta
+            property="og:image"
+            content="https://www.hoggmedia.com/images/hogglogo.png"
+          />
         </Head>
         <body>
           <Main />

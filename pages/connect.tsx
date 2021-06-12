@@ -5,7 +5,7 @@ function Connect() {
   return (
     <div>
       <Head>
-        <title>Contact</title>
+        <title>Connect</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
