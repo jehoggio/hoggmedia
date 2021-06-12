@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import ProjectList from '../components/ProjectList';
+import ProjectList from '../components/project-list';
 
 const Projects = () => {
   return (

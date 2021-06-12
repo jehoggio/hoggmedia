@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { AppProps } from 'next/app';
 import * as gtag from '../lib/gtag';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import '../styles/globals.css';
 
 const App = ({ Component, pageProps }) => {

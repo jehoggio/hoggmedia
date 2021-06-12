@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="max-w-7xl mt-12 mx-auto items-center lg:flex">
       <div className=" max-w-3xl pb-20 text-center">
         <div className="px-4">
-          <div className="relative w-full">
+          <div className=" w-full">
             <img src="/images/hoggbanner2.png" alt="banner" />
           </div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2">
         <img src="/images/hogglogo.png" alt="logo" />
       </div>
     </div>

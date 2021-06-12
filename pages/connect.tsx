@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/contact-form';
 
-function Contact() {
+function Connect() {
   return (
     <div>
       <Head>
@@ -15,4 +15,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Connect;
