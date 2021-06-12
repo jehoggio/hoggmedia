@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import VideoList from '../../components/video-list';
-import VideoPlayer from '../../components/video-player';
+import VideoList from '../../components/VideoList';
+import VideoPlayer from '../../components/VideoPlayer';
 import { YOUTUBE_ALL_VIDEOS_API } from '../../constants/videoConstants';
 
 export async function getServerSideProps() {
