@@ -8,9 +8,7 @@ function Connect() {
         <title>Connect</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <ContactForm />
-      </main>
+      <ContactForm />
     </div>
   );
 }

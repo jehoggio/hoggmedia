@@ -15,7 +15,7 @@ export default function Meta({ title = 'Hogg Media' }) {
       <meta property="og:url" content="https://hoggmedia.com/" />
       <meta
         property="og:image"
-        content="https://www.hoggmedia.com/images/hogglogo.png"
+        content="https://www.hoggmedia.com/images/hoggmediass.png"
       />
     </Head>
   );
