@@ -3,13 +3,17 @@ import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
 import Intro from '../components/intro';
 import { getAllPostsForHome } from '../lib/api';
-// import Head from 'next/head';
+import Head from 'next/head';
 
 export default function Blog({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
     <>
+      <Head>
+        <title>Blog</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container>
         <Intro />
         {heroPost && (
