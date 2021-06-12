@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import '../styles/globals.css';
 
 const App = ({ Component, pageProps }) => {
