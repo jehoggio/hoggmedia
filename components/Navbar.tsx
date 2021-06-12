@@ -36,12 +36,12 @@ export default function Navbar() {
                     <img
                       className="block lg:hidden h-8 w-auto"
                       src="images/hogglogo.png"
-                      alt="logo"
+                      alt="hogglogo"
                     />
                     <img
                       className="hidden lg:block h-8"
                       src="images/hogglogo.png"
-                      alt="logo"
+                      alt="hogglogo"
                     />
                   </a>
                 </div>
