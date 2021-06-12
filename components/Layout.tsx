@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import Navbar from './navbar';
+// import Navbar from './navbar';
 
 type Props = {
   children?: ReactNode;
@@ -25,7 +25,7 @@ const Layout = ({ children, title = 'Hogg Media' }: Props) => (
         content="https://www.hoggmedia.com/images/hogglogo.png"
       />
     </Head>
-    <Navbar />
+    {/* <Navbar /> */}
     {children}
   </div>
 );
