@@ -1,4 +1,4 @@
-import Container from '../components/Container';
+import Container from '../components/container';
 import MoreStories from '../components/MorePosts';
 import HeroPost from '../components/HeroPost';
 import BlogHeader from '../components/BlogHeader';
