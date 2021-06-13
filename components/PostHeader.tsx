@@ -1,4 +1,4 @@
-import Avatar from './avatar';
+import Avatar from './Avatar';
 import Date from './Date';
 import CoverImage from './CoverImage';
 import PostTitle from './PostTitle';
