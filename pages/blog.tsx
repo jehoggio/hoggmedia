@@ -1,7 +1,7 @@
-import Container from '../components/container';
-import MoreStories from '../components/more-stories';
-import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
+import Container from '../components/Container';
+import MoreStories from '../components/MorePosts';
+import HeroPost from '../components/HeroPost';
+import BlogHeader from '../components/BlogHeader';
 import { getAllPostsForHome } from '../lib/api';
 import Head from 'next/head';
 
@@ -15,7 +15,7 @@ export default function Blog({ allPosts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Intro />
+        <BlogHeader title />
         {heroPost && (
           <HeroPost
             title={heroPost.title}
