@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Meta from './Meta';
+import Meta from './meta';
 import Navbar from './Navbar';
 
 type Props = {
