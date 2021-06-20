@@ -12,7 +12,7 @@ export default function Blog({ allPosts }) {
     <>
       <Head>
         <title>Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
         <BlogHeader title />
@@ -32,7 +32,7 @@ export default function Blog({ allPosts }) {
   );
 }
 
-export async function getStaticProps({ preview }) {
+export async function getServerSideProps({ preview }) {
   const allPosts = (await getAllPostsForHome(preview)) || [];
   return {
     props: { allPosts },
