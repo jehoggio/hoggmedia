@@ -32,7 +32,7 @@ export default function Blog({ allPosts }) {
   );
 }
 
-export async function getServerSideProps({ preview }) {
+export async function getStaticProps({ preview }) {
   const allPosts = (await getAllPostsForHome(preview)) || [];
   return {
     props: { allPosts },
