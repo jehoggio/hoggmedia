@@ -1,11 +1,11 @@
-import React, { ReactNode } from 'react';
-import Meta from './meta';
-import Navbar from './Navbar';
+import React, { ReactNode } from 'react'
+import Meta from './Meta'
+import Navbar from './Navbar'
 
 type Props = {
-  children?: ReactNode;
-  title?: string;
-};
+  children?: ReactNode
+  title?: string
+}
 
 const Layout = ({ children }: Props) => (
   <div>
@@ -13,6 +13,6 @@ const Layout = ({ children }: Props) => (
     <Navbar />
     {children}
   </div>
-);
+)
 
-export default Layout;
+export default Layout
