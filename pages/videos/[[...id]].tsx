@@ -4,7 +4,7 @@ import VideoList from '../../components/VideoList'
 import VideoPlayer from '../../components/VideoPlayer'
 import { YOUTUBE_ALL_VIDEOS_API } from '../../lib/videoConstants'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     `${YOUTUBE_ALL_VIDEOS_API}&key=${process.env.YOUTUBE_API_KEY}`
   )
