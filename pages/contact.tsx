@@ -1,14 +1,11 @@
-import Head from 'next/head'
+import Layout from '../components/Layout'
 import ContactForm from '../components/ContactForm'
 
 function Contact() {
   return (
-    <div>
-      <Head>
-        <title>Contact</title>
-      </Head>
+    <Layout title='Contact Me'>
       <ContactForm />
-    </div>
+    </Layout>
   )
 }
 

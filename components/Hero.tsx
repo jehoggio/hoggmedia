@@ -1,42 +1,41 @@
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl mt-12 mx-auto items-center lg:flex">
-      <div className=" max-w-3xl pb-20 text-center">
-        <div className="px-4">
-          <div className=" w-full">
-            <img src="/images/hoggbanner2.png" alt="banner" />
-          </div>
+    <div className='max-w-7xl mx-auto text-center shadow-2xl p-6 rounded-2xl'>
+      <div className='px-4'>
+        <div className='w-full bg-gray-900 p-2 rounded-lg'>
+          <Image
+            src='/images/hoggbanner2.png'
+            alt='banner'
+            width={1184}
+            height={155}
+          />
+        </div>
 
-          <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:max-w-3xl">
-            Web Development, Tech and Video Production
-          </p>
-          <div className="mt-8 sm:flex sm:justify-center sm:flex-shrink">
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href="/blog"
-                className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#151B26] bg-white hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
-              >
+        <p className='text-gray-300 mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:max-w-3xl'>
+          Web Development, Tech and Video Production
+        </p>
+        <div className='mt-8 sm:flex sm:justify-center sm:flex-shrink'>
+          <div className='mt-3 rounded-md shadow-lg  sm:mt-0 sm:ml-3'>
+            <Link href='/blog'>
+              <a className='bg-gray-900 text-gray-300 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#151B26] bg-white hover:bg-gray-300 md:py-4 md:text-lg md:px-10'>
                 Blog
               </a>
-            </div>
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href="/videos"
-                className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#151B26] bg-white hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
-              >
+            </Link>
+          </div>
+          <div className='mt-3 rounded-md shadow-lg sm:mt-0 sm:ml-3'>
+            <Link href='/videos'>
+              <a className='bg-gray-900 text-gray-300 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#151B26] bg-white hover:bg-gray-300 md:py-4 md:text-lg md:px-10'>
                 Videos
               </a>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2">
-        <img src="/images/hogglogo.png" alt="logo" />
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

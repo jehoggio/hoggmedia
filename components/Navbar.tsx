@@ -10,10 +10,6 @@ const navigation = [
   { name: 'Contact', href: '/contact', current: false },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function Navbar() {
   return (
     <Disclosure as='nav' className='bg-gray-900'>
@@ -33,7 +29,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex-shrink-0 flex items-center'>
+                <div className='flex-shrink-0 flex items-center cursor-pointer'>
                   <Link href='/'>
                     <Image
                       src='/images/hogglogo.png'
