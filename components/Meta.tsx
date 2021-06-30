@@ -1,16 +1,17 @@
 import Head from 'next/head'
 
-export default function Meta({ title = 'Hogg Media' }) {
+export default function Meta({
+  title = 'Hogg Media',
+  description = 'Coding and Web development blog',
+}) {
   return (
     <Head>
       <title>{title}</title>
+      <link rel='icon' href='/favicon.ico' />
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta property='og:title' content={title} />
-      <meta
-        property='og:description'
-        content='Coding, Tech and Video production.'
-      />
+      <meta property='og:description' content={description} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://hoggmedia.com/' />
       <meta

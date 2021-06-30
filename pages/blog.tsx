@@ -5,7 +5,6 @@ export default function Blog() {
     <>
       <Head>
         <title>Blog</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
     </>
   )

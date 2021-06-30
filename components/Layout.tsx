@@ -5,13 +5,14 @@ import Navbar from './Navbar'
 type Props = {
   children?: ReactNode
   title?: string
+  description?: string
 }
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children, title, description }: Props) => (
   <div>
-    <Meta />
+    <Meta title={title} />
     <Navbar />
-    {children}
+    <main className='container mx-auto my-7'>{children}</main>
   </div>
 )
 

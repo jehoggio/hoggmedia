@@ -24,7 +24,6 @@ export default function Videos({ data }: any) {
     <div>
       <Head>
         <title>Videos</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
         <VideoPlayer />
