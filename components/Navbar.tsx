@@ -88,12 +88,12 @@ export default function Navbar() {
                           <Menu.Item>
                             {() => (
                               <a
-                                href='https://www.youtube.com/channel/UCSTOp5FPjNXBmop3o47yZaQ'
+                                href='https://www.linkedin.com/in/jeffhogg/'
                                 target='_blank'
                                 rel='noreferrer'
                                 className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
                               >
-                                YouTube
+                                LinkedIn
                               </a>
                             )}
                           </Menu.Item>
@@ -112,12 +112,12 @@ export default function Navbar() {
                           <Menu.Item>
                             {() => (
                               <a
-                                href='https://www.linkedin.com/in/jeffhogg/'
+                                href='https://www.youtube.com/channel/UCSTOp5FPjNXBmop3o47yZaQ'
                                 target='_blank'
                                 rel='noreferrer'
                                 className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
                               >
-                                LinkedIn
+                                YouTube
                               </a>
                             )}
                           </Menu.Item>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function ContactForm() {
   return (
     <div className='relative max-w-7xl mx-auto lg:grid lg:grid-cols-5 shadow-2xl p-6 rounded-2xl'>
@@ -11,10 +13,12 @@ export default function ContactForm() {
           </p>
           <dl className='mt-8 text-base'>
             <div>
-              <img
-                className='h-48 rounded-lg shadow-lg'
-                src='images/me.jpg'
+              <Image
+                className='rounded-lg shadow-lg'
+                src='/images/me.jpg'
                 alt='me'
+                height={200}
+                width={200}
               />
             </div>
             <div className='mt-6'>
@@ -28,7 +32,7 @@ export default function ContactForm() {
                 >
                   <span className='sr-only'>LinkedIn</span>
                   <svg
-                    className='w-6 h-6'
+                    className='w-6 h-6 transition duration-140 transform hover:scale-110'
                     aria-hidden='true'
                     fill='#0077B5'
                     viewBox='0 0 20 20'
@@ -61,7 +65,7 @@ export default function ContactForm() {
                 >
                   <span className='sr-only'>Twitter</span>
                   <svg
-                    className='w-6 h-6'
+                    className='w-6 h-6 transition duration-140 transform hover:scale-110'
                     aria-hidden='true'
                     fill='#00acee'
                     viewBox='0 0 25 25'
@@ -80,6 +84,33 @@ export default function ContactForm() {
                   className='ml-3'
                 >
                   @Hogg_Media
+                </a>
+              </dd>
+            </div>
+            <div className='mt-3'>
+              <dt className='sr-only'>YouTube</dt>
+              <dd className='flex'>
+                <a
+                  href='https://twitter.com/Hogg_Media'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='transition duration-140 transform hover:scale-110'
+                >
+                  <span className='sr-only'>YouTube</span>
+                  <Image
+                    src='/images/youtube.png'
+                    alt='YoutTube logo'
+                    height={22}
+                    width={32}
+                  />
+                </a>
+                <a
+                  href='https://www.youtube.com/c/HoggMedia'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='ml-3'
+                >
+                  Hogg Media
                 </a>
               </dd>
             </div>
