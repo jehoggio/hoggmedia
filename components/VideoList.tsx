@@ -1,19 +1,19 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 const VideosList = ({ data }: any) => {
   return (
-    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div className='max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 shadow-2xl p-6 rounded-2xl'>
       <ul
-        role="list"
-        className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+        role='list'
+        className='grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'
       >
-        {data.items.map(item => {
-          const { id, snippet = {} } = item;
-          const { thumbnails = {}, resourceId, title } = snippet;
+        {data.items.map((item) => {
+          const { id, snippet = {} } = item
+          const { thumbnails = {}, resourceId, title } = snippet
 
           return (
-            <div key={id} className="mt-2">
+            <div key={id} className='mt-2'>
               <Link
                 href={{
                   pathname: '/videos/[id]',
@@ -21,7 +21,7 @@ const VideosList = ({ data }: any) => {
                 }}
               >
                 <img
-                  className="cursor-pointer transition duration-150 transform hover:scale-110"
+                  className='cursor-pointer transition duration-150 transform hover:scale-110'
                   src={thumbnails.maxres.url}
                   height={thumbnails.maxres.height}
                   width={thumbnails.maxres.width}
@@ -29,11 +29,11 @@ const VideosList = ({ data }: any) => {
                 />
               </Link>
             </div>
-          );
+          )
         })}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default VideosList;
+export default VideosList

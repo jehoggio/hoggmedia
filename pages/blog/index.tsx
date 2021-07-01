@@ -4,11 +4,12 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import Layout from '../../components/Layout'
 import Post from '../../components/Post'
+import { sortByDate } from '../../utils'
 
 export default function Blog({ posts }) {
   return (
     <Layout title='Blog'>
-      <h1 className='text-5xl border-b-4 p-5 font-bold mb-8 '>Latest Posts</h1>
+      <h1 className='text-5xl border-b-4 p-5 font-bold mb-8 '>Blog</h1>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {posts.map((post, i) => (
@@ -39,7 +40,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate),
     },
   }
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <main className='mx-auto max-w-5xl px-4 sm:mt-24 mx-auto text-center shadow-2xl p-6 mt-20 rounded-2xl'>
+    <div className='mx-auto max-w-5xl px-4 sm:mt-24 mx-auto text-center shadow-2xl p-6 mt-20 rounded-2xl'>
       <div className='text-center'>
         <Image src='/images/hogglogo.png' width={200} height={200} />
 
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     // <div className='max-w-7xl bg-gray-900 mx-auto text-center shadow-2xl p-6 mt-20 rounded-2xl'>
     //   <div className='w-full  p-2 rounded-lg'>
