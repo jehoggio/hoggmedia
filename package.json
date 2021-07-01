@@ -10,6 +10,7 @@
   "dependencies": {
     "classnames": "2.2.6",
     "clsx": "latest",
+    "gray-matter": "^4.0.3",
     "lazysizes": "^5.2.1-rc2",
     "next": "latest",
     "react": "^17.0.1",
