@@ -9,7 +9,7 @@ export default function VideoPlayer() {
   const vidUrl = `https://www.youtube.com/watch?v=${id ? id : defaultVid}`
   return (
     <>
-      <div className='flex mt-4 mb-2 justify-center mx-auto md:hidden'>
+      <div className='flex mt-4 mb-4 justify-center mx-auto md:hidden'>
         <ReactPlayer
           width='320px'
           height='180px'

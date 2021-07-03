@@ -3,14 +3,9 @@ import Image from 'next/image'
 export default function ContactForm() {
   return (
     <div className='relative max-w-7xl mx-auto lg:grid lg:grid-cols-5 shadow-2xl p-6 rounded-2xl'>
-      <div className=' py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
+      <div className='px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
         <div className='max-w-lg mx-auto'>
-          <h2 className='text-2xl font-extrabold tracking-tight sm:text-3xl'>
-            Get in touch
-          </h2>
-          <p className='mt-3 text-lg leading-6'>
-            Feel free to reach out or leave a message
-          </p>
+          <h2 className='text-2xl font-bold sm:text-3xl'>Let's connect</h2>
           <dl className='mt-8 text-base'>
             <div>
               <Image
@@ -175,7 +170,7 @@ export default function ContactForm() {
             <div>
               <button
                 type='submit'
-                className='inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                className='inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               >
                 Submit
               </button>

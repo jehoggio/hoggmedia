@@ -23,7 +23,7 @@ export default function Videos({ data }: any) {
   return (
     <Layout title='Videos'>
       <main>
-        <h1 className='text-5xl border-b-4 p-5 font-bold'>Videos</h1>
+        <h1 className='text-5xl border-b-4 p-5 font-bold'>Video Player</h1>
         <VideoPlayer />
         <VideoList data={data} />
       </main>

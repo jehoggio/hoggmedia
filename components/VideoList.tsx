@@ -3,7 +3,8 @@ import Link from 'next/link'
 
 const VideosList = ({ data }: any) => {
   return (
-    <div className='max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 shadow-2xl p-6 rounded-2xl'>
+    <div className='max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 shadow-2xl rounded-2xl'>
+      <h2 className='text-2xl p-5 font-bold '>Latest Videos:</h2>
       <ul
         role='list'
         className='grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'
