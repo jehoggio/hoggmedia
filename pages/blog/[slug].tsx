@@ -13,7 +13,9 @@ const Post = ({
 }) => {
   return (
     <Layout title={title}>
-      <Link href='/blog'>Go Back</Link>
+      <div className='ml-10 lg:ml-0'>
+        <Link href='/blog'>Go Back</Link>
+      </div>
       <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
         <div className='flex justify-between items-center mt-4'>
           <h1 className='text-5xl mb-7'>{title}</h1>
