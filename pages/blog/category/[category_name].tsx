@@ -12,7 +12,7 @@ export default function BlogCategory({ posts, categoryName, categories }) {
     categoryName[0].toUpperCase() + categoryName.slice(1)
 
   return (
-    <Layout title='Blog'>
+    <Layout title={categoryNameCapitalized}>
       <div className='flex justify-between flex-col md:flex-row'>
         <div className='md:w-3/4 md:mr-10'>
           <h1 className='text-5xl border-b-4 p-5 font-bold mb-8 '>

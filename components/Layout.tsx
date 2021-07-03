@@ -6,13 +6,11 @@ type Props = {
   children?: ReactNode
   title?: string
   description?: string
-  type?: string
-  date?: string
 }
 
-const Layout = ({ children, title, description, type, date }: Props) => (
+const Layout = ({ children, title, description }: Props) => (
   <div>
-    <Meta title={title} description={description} type={type} date={date} />
+    <Meta title={title} description={description} />
     <Navbar />
     <main className='container mx-auto my-7'>{children}</main>
   </div>
