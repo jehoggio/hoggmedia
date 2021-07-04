@@ -29,7 +29,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex-shrink-0 flex items-center cursor-pointer '>
+                <div className='flex-shrink-0 pt-2 flex items-center cursor-pointer '>
                   <Link href='/'>
                     <a>
                       <Image
@@ -41,11 +41,11 @@ export default function Navbar() {
                     </a>
                   </Link>
                 </div>
-                <div className='hidden sm:block sm:ml-6'>
-                  <div className='flex space-x-4'>
+                <div className='hidden pt-4 sm:block sm:ml-6'>
+                  <div className='space-x-8'>
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a className='text-gray-500 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium'>
+                        <a className='text-gray-500 hover:bg-gray-100 rounded-md text-sm font-medium'>
                           {item.name}
                         </a>
                       </Link>
