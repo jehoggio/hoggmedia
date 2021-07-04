@@ -31,22 +31,21 @@ export default function Navbar() {
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex-shrink-0 flex items-center cursor-pointer '>
                   <Link href='/'>
-                    <Image
-                      src='/images/hogglogo.png'
-                      alt='hogglogo'
-                      width={40}
-                      height={40}
-                    />
+                    <a>
+                      <Image
+                        src='/images/hogglogo.png'
+                        alt='hogglogo'
+                        width={40}
+                        height={40}
+                      />
+                    </a>
                   </Link>
                 </div>
                 <div className='hidden sm:block sm:ml-6'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
-                      <Link href={item.href}>
-                        <a
-                          key={item.name}
-                          className='text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium'
-                        >
+                      <Link key={item.name} href={item.href}>
+                        <a className='text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium'>
                           {item.name}
                         </a>
                       </Link>
@@ -133,11 +132,8 @@ export default function Navbar() {
           <Disclosure.Panel className='sm:hidden'>
             <div className='px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
-                <Link href={item.href}>
-                  <a
-                    key={item.name}
-                    className='hover:bg-blue-800 text-white block px-3 py-2 rounded-md text-base font-medium'
-                  >
+                <Link key={item.name} href={item.href}>
+                  <a className='hover:bg-blue-800 text-white block px-3 py-2 rounded-md text-base font-medium'>
                     {item.name}
                   </a>
                 </Link>

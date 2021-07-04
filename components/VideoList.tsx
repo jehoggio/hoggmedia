@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const VideosList = ({ data }: any) => {
   return (
@@ -21,13 +22,15 @@ const VideosList = ({ data }: any) => {
                   query: { id: `${resourceId.videoId}` },
                 }}
               >
-                <img
-                  className='cursor-pointer transition duration-150 transform hover:scale-110'
-                  src={thumbnails.maxres.url}
-                  height={thumbnails.maxres.height}
-                  width={thumbnails.maxres.width}
-                  alt={title}
-                />
+                <a>
+                  <Image
+                    className='cursor-pointer'
+                    src={thumbnails.maxres.url}
+                    height={thumbnails.maxres.height}
+                    width={thumbnails.maxres.width}
+                    alt={title}
+                  />
+                </a>
               </Link>
             </div>
           )

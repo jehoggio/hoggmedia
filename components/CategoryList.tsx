@@ -7,8 +7,11 @@ const CategoryList = ({ categories }) => {
         Categories
       </h3>
       <ul className='divide-y divide-gray-300'>
-        {categories.map((category, i) => (
-          <Link key={i} href={`/blog/category/${category.toLowerCase()}`}>
+        {categories.map((category) => (
+          <Link
+            key={category}
+            href={`/blog/category/${category.toLowerCase()}`}
+          >
             <li className='p-4 cursor-pointer hover:bg-gray-50'>{category}</li>
           </Link>
         ))}
