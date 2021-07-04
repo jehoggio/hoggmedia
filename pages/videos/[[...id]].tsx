@@ -7,7 +7,9 @@ import { YOUTUBE_ALL_VIDEOS_API } from '@/lib/videoConstants'
 export default function Videos({ data }: any) {
   return (
     <Layout title='Videos'>
-      <h1 className='text-5xl border-b-4 p-5 font-bold'>Video Player</h1>
+      <h1 className='text-5xl border-b-4 border-gray-300 p-5 font-bold'>
+        Video Player
+      </h1>
       <VideoPlayer />
       <VideoList data={data} />
     </Layout>

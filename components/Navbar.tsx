@@ -12,14 +12,14 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <Disclosure as='nav' className='bg-blue-900'>
+    <Disclosure as='nav' className='bg-white'>
       {({ open }) => (
         <>
           <div className='px-2 sm:px-6 '>
             <div className='relative flex items-center justify-between h-16'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -45,7 +45,7 @@ export default function Navbar() {
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a className='text-white hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium'>
+                        <a className='text-gray-500 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium'>
                           {item.name}
                         </a>
                       </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
                   {({ open }) => (
                     <>
                       <div>
-                        <Menu.Button className='bg-blue-900 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
+                        <Menu.Button className='text-gray-500 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-500 focus:ring-white'>
                           <span className='sr-only'>Open user menu</span>
                           <Image
                             className='rounded-full'
@@ -133,7 +133,7 @@ export default function Navbar() {
             <div className='px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
-                  <a className='hover:bg-blue-800 text-white block px-3 py-2 rounded-md text-base font-medium'>
+                  <a className='text-gray-500 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium'>
                     {item.name}
                   </a>
                 </Link>

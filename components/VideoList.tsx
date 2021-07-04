@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const VideosList = ({ data }: any) => {
   return (
-    <div className='max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 shadow-2xl rounded-2xl'>
+    <div className='max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 shadow-2xl bg-white rounded-2xl'>
       <h2 className='text-2xl p-5 font-bold '>Latest Videos:</h2>
       <ul
         role='list'

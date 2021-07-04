@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ContactForm() {
   return (
-    <div className='relative max-w-7xl mx-auto lg:grid lg:grid-cols-5 shadow-2xl p-6 rounded-2xl'>
+    <div className='relative bg-white max-w-7xl mx-auto lg:grid lg:grid-cols-5 shadow-2xl p-6 rounded-2xl'>
       <div className='px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
         <div className='max-w-lg mx-auto'>
           <h2 className='text-2xl font-bold sm:text-3xl'>Let's connect</h2>

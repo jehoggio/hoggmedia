@@ -6,7 +6,9 @@ import { getPosts } from '@/lib/posts'
 export default function Blog({ posts, categories }) {
   return (
     <Layout title='Blog'>
-      <h1 className='text-5xl border-b-4 p-5 font-bold mb-8 '>Blog</h1>
+      <h1 className='text-5xl border-b-4 border-gray-300 p-5 font-bold mb-8 '>
+        Blog
+      </h1>
       <div className='flex justify-between flex-col md:flex-row'>
         <div className='md:w-3/4 md:mr-10'>
           <div className='grid lg:grid-cols-2  gap-4'>
