@@ -6,7 +6,7 @@ const Post = ({ post }) => {
   const { frontmatter, slug } = post
 
   return (
-    <div className='transition duration-140 transform hover:scale-110 w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
+    <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
       <Link href={`/blog/${slug}`}>
         <Image
           src={frontmatter.cover_image}
@@ -37,13 +37,15 @@ const Post = ({ post }) => {
 
         <div className='flex items-center'>
           <Link href='/contact'>
-            <Image
-              src={frontmatter.author_image}
-              alt=''
-              className='mx-4 w-10 h-10 object-cover cursor-pointer rounded-full'
-              width={40}
-              height={40}
-            />
+            <a className='transition duration-140 transform hover:scale-110'>
+              <Image
+                src={frontmatter.author_image}
+                alt=''
+                className='mx-4 w-10 h-10 object-cover cursor-pointer rounded-full'
+                width={40}
+                height={40}
+              />
+            </a>
           </Link>
           <Link href='/contact'>
             <h3 className='text-gray-700 ml-2 font-bold cursor-pointer hover:text-blue-600'>
