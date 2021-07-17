@@ -16,13 +16,7 @@ const Hero = () => {
         <div className='w-full border-t border-gray-300' />
         <MailingList />
       </div>
-      <Image
-        className=''
-        src='/images/sfcity.jpg'
-        width={1000}
-        height={1500}
-        alt=''
-      />
+      <Image src='/images/sfcity.jpg' width={1000} height={1500} alt='' />
     </div>
   )
 }
