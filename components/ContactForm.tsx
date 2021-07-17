@@ -169,8 +169,8 @@ export default function ContactForm() {
             </div>
             <div>
               <button
-                type='submit'
-                className='inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                type='button'
+                className='inline-flex items-center my-2 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
               >
                 Submit
               </button>

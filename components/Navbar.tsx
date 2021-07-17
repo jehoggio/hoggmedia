@@ -7,6 +7,7 @@ import Image from 'next/image'
 const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Videos', href: '/videos' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -82,7 +83,7 @@ export default function Navbar() {
                       >
                         <Menu.Items
                           static
-                          className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
+                          className='origin-top-right absolute z-10 right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
                         >
                           <Menu.Item>
                             {() => (

@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import ContactForm from '@/components/ContactForm'
 
-function Contact() {
+export default function Contact() {
   return (
     <Layout title='Contact Me'>
       <h1 className='text-5xl border-b-4 border-gray-300 p-5 mb-8 font-bold'>
@@ -11,5 +11,3 @@ function Contact() {
     </Layout>
   )
 }
-
-export default Contact

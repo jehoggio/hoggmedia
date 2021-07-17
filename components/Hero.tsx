@@ -4,7 +4,7 @@ import MailingList from './MailingList'
 
 const Hero = () => {
   return (
-    <div className='lg:flex lg:flex-row bg-white mx-auto max-w-5xl text-center shadow-2xl rounded-2xl'>
+    <div className='overflow-hidden lg:flex lg:flex-row bg-white mx-auto max-w-5xl text-center shadow-2xl rounded-2xl'>
       <div className='container p-6 text-center'>
         <Image src='/images/hogglogo.png' width={200} height={200} />
         <h1 className='mt-2 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
@@ -17,7 +17,7 @@ const Hero = () => {
         <MailingList />
       </div>
       <Image
-        className='object-cover z-0 rounded-2xl '
+        className=''
         src='/images/sfcity.jpg'
         width={1000}
         height={1500}

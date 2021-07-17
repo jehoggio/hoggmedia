@@ -2,7 +2,7 @@ const EmailInput = () => {
   return (
     <div className='mt-8'>
       <p className='max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
-        Join Our Mailing List!
+        Join the Mailing List!
       </p>
       <div className='flex justify-center mb-4'>
         <input
@@ -10,7 +10,7 @@ const EmailInput = () => {
           name='email'
           id='email'
           className='max-w-xs shadow-sm focus:ring-green-400 focus:border-green-400 block w-full sm:text-sm border-gray-300 rounded-md'
-          placeholder='you@example.com'
+          placeholder='email@example.com'
           aria-describedby='email-description'
         />
       </div>
