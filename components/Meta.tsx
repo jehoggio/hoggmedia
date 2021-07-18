@@ -16,7 +16,7 @@ export default function Meta({
       <meta property='og:url' content='https://hoggmedia.com/' />
       <meta
         property='og:image'
-        content='https://www.hoggmedia.com/images/hoggmediass.png'
+        content='https://www.hoggmedia.com/images/projects/hoggmedia.png'
       />
     </Head>
   )

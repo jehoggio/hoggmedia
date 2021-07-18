@@ -7,15 +7,13 @@ export default function ContactForm() {
         <div className='max-w-lg mx-auto'>
           <h2 className='text-2xl font-bold sm:text-3xl'>Let's connect</h2>
           <dl className='mt-8 text-base'>
-            <div>
-              <Image
-                className='rounded-lg shadow-lg'
-                src='/images/me.jpg'
-                alt='me'
-                height={200}
-                width={200}
-              />
-            </div>
+            <Image
+              className='rounded-lg shadow-lg'
+              src='/images/assets/me.jpg'
+              alt='me'
+              height={200}
+              width={200}
+            />
             <div className='mt-6'>
               <dt className='sr-only'>LinkedIn</dt>
               <dd className='flex'>
@@ -93,7 +91,7 @@ export default function ContactForm() {
                 >
                   <span className='sr-only'>YouTube</span>
                   <Image
-                    src='/images/youtube.png'
+                    src='/images/assets/youtube.png'
                     alt='YoutTube logo'
                     height={20}
                     width={28}

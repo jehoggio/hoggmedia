@@ -68,7 +68,7 @@ const navigation = {
       icon: () => (
         <img
           className='transition duration-140 transform hover:scale-110'
-          src='/images/youtube.png'
+          src='/images/assets/youtube.png'
           alt='YoutTube logo'
           height={32}
           width={32}

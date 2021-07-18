@@ -34,7 +34,7 @@ export default function Navbar() {
                   <Link href='/'>
                     <a>
                       <Image
-                        src='/images/hogglogo.png'
+                        src='/images/assets/hogglogo.png'
                         alt='hogglogo'
                         width={40}
                         height={40}
@@ -64,7 +64,7 @@ export default function Navbar() {
                           <span className='sr-only'>Open user menu</span>
                           <Image
                             className='rounded-full'
-                            src='/images/me.jpg'
+                            src='/images/assets/me.jpg'
                             alt='headshot'
                             width={40}
                             height={40}
