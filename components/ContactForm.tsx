@@ -53,7 +53,7 @@ export default function ContactForm() {
               <dt className='sr-only'>Twitter</dt>
               <dd className='flex'>
                 <a
-                  href='https://twitter.com/Hogg_Media'
+                  href='https://twitter.com/HoggMedia_'
                   target='_blank'
                   rel='noreferrer'
                   className='text-gray-400 hover:text-gray-500'
@@ -73,12 +73,12 @@ export default function ContactForm() {
                   </svg>
                 </a>
                 <a
-                  href='https://twitter.com/Hogg_Media'
+                  href='https://twitter.com/HoggMedia_'
                   target='_blank'
                   rel='noreferrer'
                   className='ml-3'
                 >
-                  @Hogg_Media
+                  @HoggMedia_
                 </a>
               </dd>
             </div>
@@ -86,7 +86,7 @@ export default function ContactForm() {
               <dt className='sr-only'>YouTube</dt>
               <dd className='flex'>
                 <a
-                  href='https://twitter.com/Hogg_Media'
+                  href='https://www.youtube.com/c/HoggMedia'
                   target='_blank'
                   rel='noreferrer'
                   className='transition duration-140 transform hover:scale-110'
@@ -95,8 +95,8 @@ export default function ContactForm() {
                   <Image
                     src='/images/youtube.png'
                     alt='YoutTube logo'
-                    height={22}
-                    width={32}
+                    height={20}
+                    width={28}
                   />
                 </a>
                 <a

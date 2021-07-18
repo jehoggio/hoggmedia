@@ -7,7 +7,7 @@ import Image from 'next/image'
 const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Videos', href: '/videos' },
-  { name: 'Projects', href: '/projects' },
+  { name: 'Portfolio', href: '/portfolio' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -94,6 +94,18 @@ export default function Navbar() {
                                 className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
                               >
                                 LinkedIn
+                              </a>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {() => (
+                              <a
+                                href='https://github.com/jeffhogg86'
+                                target='_blank'
+                                rel='noreferrer'
+                                className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
+                              >
+                                Github
                               </a>
                             )}
                           </Menu.Item>
