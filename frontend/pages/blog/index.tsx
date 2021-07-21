@@ -1,5 +1,5 @@
 import Container from '@/components/container'
-import MoreStories from '@/components/more-stories'
+import MorePosts from '@/components/more-posts'
 import HeroPost from '@/components/hero-post'
 import Intro from '@/components/intro'
 import Layout from '@/components/Layout'
@@ -23,7 +23,7 @@ export default function Blog({ allPosts, preview }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MorePosts posts={morePosts} />}
         </Container>
       </Layout>
     </>
