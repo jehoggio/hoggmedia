@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "date-fns": "2.22.1",
     "clsx": "latest",
+    "date-fns": "2.22.1",
     "lazysizes": "^5.2.1-rc2",
     "next": "latest",
     "react": "^17.0.1",
