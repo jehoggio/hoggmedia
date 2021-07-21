@@ -7,9 +7,10 @@ type Props = {
   children?: ReactNode
   title?: string
   description?: string
+  preview?: boolean
 }
 
-const Layout = ({ children, title, description }: Props) => (
+const Layout = ({ preview, children, title, description }: Props) => (
   <div>
     <Meta title={title} description={description} />
     <Navbar />
