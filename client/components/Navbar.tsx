@@ -46,7 +46,7 @@ export default function Navbar() {
                   <div className='space-x-8'>
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a className='text-gray-500 hover:bg-gray-100 rounded-md text-sm font-medium'>
+                        <a className='text-gray-500 rounded-md font-medium'>
                           {item.name}
                         </a>
                       </Link>
