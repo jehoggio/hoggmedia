@@ -1,6 +1,30 @@
+import { useState } from 'react'
 import Image from 'next/image'
+import MessageSentAlert from './alerts/MessageSentAlert'
 
 export default function ContactForm() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSubmitted(true)
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    }
+    console.log(data)
+    setName('')
+    setEmail('')
+    setPhone('')
+    setMessage('')
+  }
+
   return (
     <div className='relative bg-white max-w-7xl mx-auto lg:grid lg:grid-cols-5 shadow-2xl p-6 rounded-2xl'>
       <div className='px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
@@ -51,7 +75,7 @@ export default function ContactForm() {
               <dt className='sr-only'>Twitter</dt>
               <dd className='flex'>
                 <a
-                  href='https://twitter.com/HoggMedia_'
+                  href='https://twitter.com/JeffeHogg'
                   target='_blank'
                   rel='noreferrer'
                   className='text-gray-400 hover:text-gray-500'
@@ -71,12 +95,12 @@ export default function ContactForm() {
                   </svg>
                 </a>
                 <a
-                  href='https://twitter.com/HoggMedia_'
+                  href='https://twitter.com/JeffeHogg'
                   target='_blank'
                   rel='noreferrer'
                   className='ml-3'
                 >
-                  @HoggMedia_
+                  @JeffeHogg
                 </a>
               </dd>
             </div>
@@ -110,20 +134,30 @@ export default function ContactForm() {
           </dl>
         </div>
       </div>
+
       <div className='px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12'>
         <div className='max-w-lg mx-auto lg:max-w-none'>
-          <form action='#' method='POST' className='grid grid-cols-1 gap-y-6'>
+          {submitted && <MessageSentAlert />}
+          <form
+            action='#'
+            method='POST'
+            className='grid grid-cols-1 gap-y-6 mt-2'
+          >
             <div>
-              <label htmlFor='full_name' className='sr-only'>
-                Full name
+              <label htmlFor='name' className='sr-only'>
+                Name
               </label>
               <input
                 type='text'
-                name='full_name'
-                id='full_name'
+                name='name'
+                value={name}
+                id='name'
                 autoComplete='name'
-                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
-                placeholder='Full name'
+                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-400 focus:border-green-400 border-gray-300 rounded-md'
+                placeholder='Name'
+                onChange={(e) => {
+                  setName(e.target.value)
+                }}
               />
             </div>
             <div>
@@ -133,10 +167,14 @@ export default function ContactForm() {
               <input
                 id='email'
                 name='email'
+                value={email}
                 type='email'
                 autoComplete='email'
-                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-400 focus:border-green-400 border-gray-300 rounded-md'
                 placeholder='Email'
+                onChange={(e) => {
+                  setEmail(e.target.value)
+                }}
               />
             </div>
             <div>
@@ -146,10 +184,14 @@ export default function ContactForm() {
               <input
                 type='text'
                 name='phone'
+                value={phone}
                 id='phone'
                 autoComplete='tel'
-                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-400 focus:border-green-400 border-gray-300 rounded-md'
                 placeholder='Phone'
+                onChange={(e) => {
+                  setPhone(e.target.value)
+                }}
               />
             </div>
             <div>
@@ -159,16 +201,20 @@ export default function ContactForm() {
               <textarea
                 id='message'
                 name='message'
+                value={message}
                 rows={4}
-                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md'
+                className='block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-400 focus:border-green-400 border border-gray-300 rounded-md'
                 placeholder='Message'
-                defaultValue={''}
+                onChange={(e) => {
+                  setMessage(e.target.value)
+                }}
               />
             </div>
             <div>
               <button
                 type='button'
                 className='inline-flex items-center my-2 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+                onClick={handleSubmit}
               >
                 Submit
               </button>

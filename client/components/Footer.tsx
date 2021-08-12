@@ -45,7 +45,7 @@ const navigation = {
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/HoggMedia_',
+      href: 'https://twitter.com/JeffeHogg',
       icon: () => (
         <svg
           className='w-6 h-6 transition duration-140 transform hover:scale-110'

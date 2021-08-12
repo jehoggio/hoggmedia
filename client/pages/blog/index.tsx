@@ -1,7 +1,7 @@
-import Container from '@/components/container'
-import MorePosts from '@/components/more-posts'
-import HeroPost from '@/components/hero-post'
-import Intro from '@/components/intro'
+import Container from '@/components/blog/container'
+import MorePosts from '@/components/blog/more-posts'
+import HeroPost from '@/components/blog/hero-post'
+import Intro from '@/components/blog/intro'
 import Layout from '@/components/Layout'
 import { getAllPostsForHome } from '@/lib/api'
 

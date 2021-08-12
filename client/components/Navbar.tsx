@@ -112,7 +112,7 @@ export default function Navbar() {
                           <Menu.Item>
                             {() => (
                               <a
-                                href='https://twitter.com/Hogg_Media'
+                                href='https://twitter.com/JeffeHogg'
                                 target='_blank'
                                 rel='noreferrer'
                                 className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'

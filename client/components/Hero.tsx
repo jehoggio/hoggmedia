@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import MailingList from './MailingList'
+import MailingListForm from './MailingListForm'
 
 const Hero = () => {
   return (
@@ -11,10 +11,10 @@ const Hero = () => {
           Hogg Media
         </h1>
         <p className='mt-4 mb-8 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:text-xl md:max-w-3xl'>
-          Helping to advance the world through technology and data.
+          A personal website to display my work and projects.
         </p>
         <div className='w-full border-t border-gray-300' />
-        <MailingList />
+        <MailingListForm />
       </div>
       <Image
         src='/images/assets/sfcity.jpg'
