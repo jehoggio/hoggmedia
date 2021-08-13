@@ -11,7 +11,7 @@ const Hero = () => {
           Hogg Media
         </h1>
         <p className='mt-4 mb-8 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:text-xl md:max-w-3xl'>
-          A personal website to display my work and projects.
+          A personal website to share my projects, videos and blog posts.
         </p>
         <div className='w-full border-t border-gray-300' />
         <MailingListForm />
