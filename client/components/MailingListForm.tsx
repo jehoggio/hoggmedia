@@ -15,7 +15,7 @@ const MailingListForm = () => {
 
   return (
     <div className='mt-8'>
-      <p className='max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
+      <p className='max-w-md mb-6 mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
         Subscribe to the mailing list to stay up to date with the latest news
         and updates.
       </p>
@@ -46,7 +46,7 @@ const MailingListForm = () => {
         />
         <button
           type='button'
-          className='inline-flex items-center my-2 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+          className='inline-flex items-center mt-4 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
           onClick={handleSubmit}
         >
           Submit
@@ -54,7 +54,7 @@ const MailingListForm = () => {
       </form>
 
       {showSubscribed && <SubscribedAlert />}
-      <p className='mt-2 text-sm text-gray-500' id='email-description'>
+      <p className='mt-4 text-sm text-gray-500' id='email-description'>
         Your data will be kept secure and private.
       </p>
     </div>
