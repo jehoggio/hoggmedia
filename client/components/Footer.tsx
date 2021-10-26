@@ -27,7 +27,7 @@ const navigation = {
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/jeffhogg86',
+      href: 'https://github.com/jeffehogg',
       icon: () => (
         <svg
           fill='#000'

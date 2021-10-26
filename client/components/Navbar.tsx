@@ -100,7 +100,7 @@ export default function Navbar() {
                           <Menu.Item>
                             {() => (
                               <a
-                                href='https://github.com/jeffhogg86'
+                                href='https://github.com/jeffehogg'
                                 target='_blank'
                                 rel='noreferrer'
                                 className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
